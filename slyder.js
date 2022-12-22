@@ -1,27 +1,28 @@
-let leftZ = 0;  //смещение от левого края
+let move = 0;  
 const slyderLine = document.querySelector('.lenta');
+//берем блок с картинками
+
+var colvo  = document.getElementsByClassName("lenta")[0].childElementCount;
+console.log(colvo);
+let colvopx = 0;
+colvopx = colvo * 400 - 400;
 
 document.querySelector('.slyder-next').addEventListener('click', function(){
-	leftZ = leftZ + 400;
-	if (leftZ > 1200){
-		leftZ = 0;
+	move = move + 400; 
+	if (move > colvopx){
+		move = 0;
 	}
-	slyderLine.style.left = -leftZ + 'px'
+	slyderLine.style.left = -move + 'px'  
+	//после нажатия смещяем блок на -400 ппикселей/ максимум 1600 пикселей если больше меняет на 0 пикселей
 });
+//кнопка next/работает за счет смещения блока влево
 
 document.querySelector('.slyder-back').addEventListener('click', function(){
-	leftZ = leftZ - 400;
-	if (leftZ < 0){
-		leftZ = 1200;
+	move = move - 400;
+	if (move < 0){
+		move = colvopx;
 	}
-	slyderLine.style.left = -leftZ + 'px'
+	slyderLine.style.left = -move + 'px'
+	//после нажатия смещяем блок на 400 ппикселей/ максимум 1600 пикселей если больше меняет на 0 пикселей
 });
-
-
-
-
-
-
-
-
-
+//кнопка back/работает за счет смещения блока вправо

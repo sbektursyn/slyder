@@ -5,13 +5,14 @@ body{
 
 .slyder {
 	width: 400px;
-	height: 400px;
+	height: 250px;
 	overflow: hidden;
+	border:1.5px solid #f00;
 }
 
 .lenta {
 	position: relative;
-	width: 1140px;
+	width: 2000px;
 	height: 315px;
 	flex-direction: row;
 	left: 0;
@@ -24,21 +25,33 @@ body{
 
 .l_images-1{
 	width: 400px;
+	height: 250px;
 }
 .l_images-2{
 	width: 400px;
+	height: 250px;
 	padding-left: 400px;
 }
 .l_images-3{
 	width: 400px;
+	height: 250px;
 	padding-left: 800px;
 }
 
 .l_images-4{
 	width: 400px;
+	height: 250px;
 	padding-left: 1200px;
 }
-.l_images-1, .l_images-2, .l_images-3, .l_images-4{
+
+.l_images-5{
+	width: 400px;
+	height: 250px;
+	padding-left: 1600px;
+}
+
+
+.l_images-1, .l_images-2, .l_images-3, .l_images-4, .l_images-5{
 	position: absolute;
 }
 
