@@ -1,0 +1,62 @@
+body{
+	display: flex;
+	justify-content: center;
+}
+
+.slyder {
+	width: 400px;
+	height: 400px;
+	overflow: hidden;
+}
+
+.lenta {
+	position: relative;
+	width: 1140px;
+	height: 315px;
+	flex-direction: row;
+	left: 0;
+	transition: all ease 1s;
+}
+
+.buttons {
+	margin-top: 300px;
+}
+
+.l_images-1{
+	width: 400px;
+}
+.l_images-2{
+	width: 400px;
+	padding-left: 400px;
+}
+.l_images-3{
+	width: 400px;
+	padding-left: 800px;
+}
+
+.l_images-4{
+	width: 400px;
+	padding-left: 1200px;
+}
+.l_images-1, .l_images-2, .l_images-3, .l_images-4{
+	position: absolute;
+}
+
+.slyder-next {
+	width: 50px;
+	height: 30px;
+	font-size: 16px;
+	transition: 0.5s;
+}
+.slyder-next::hover {
+	background-color: gray;
+}
+.slyder-back {
+	width: 50px;
+	height: 30px;
+	font-size: 16px;
+	transition: 0.5s;
+}
+.slyder-back::hover {
+	background-color: gray;
+}
