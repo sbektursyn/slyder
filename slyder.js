@@ -4,8 +4,12 @@ const slyderLine = document.querySelector('.lenta');
 
 var colvo  = document.getElementsByClassName("lenta")[0].childElementCount;
 console.log(colvo);
+//считаем количество картинок
+
 let colvopx = 0;
 colvopx = colvo * 400 - 400;
+//преобразуем количество в размер в пикселях
+
 
 document.querySelector('.slyder-next').addEventListener('click', function(){
 	move = move + 400; 
